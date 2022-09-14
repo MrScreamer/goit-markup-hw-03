@@ -43,12 +43,10 @@
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
     display: flex;
-    /* justify-content: space-between;  */
 }
 
 .logo {
@@ -285,6 +283,23 @@ letter-spacing: 0.06em;
 
 /* portfolio */
 
+.prtf-section {
+
+}
+
+.line {
+   border-top: 1px solid #ECECEC;
+}
+
+.portfolio-menu {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.prtf-menu-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .prtf-menu-list-item > button{
     background: #F5F4FA;
     border-radius: 4px;
@@ -298,6 +313,10 @@ letter-spacing: 0.06em;
     font-family: inherit;
 }
 
+.prtf-padding-button {
+    padding: 6px 25px;
+}
+
 .prtf-menu-list-item>button:hover,
 .prtf-menu-list-item>button:focus {
     color: var(--main-white);
@@ -306,9 +325,16 @@ letter-spacing: 0.06em;
     cursor: pointer;
 }
 
+.prtf-item-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
 .prtf-list-item {
     border: 1px solid #EEEEEE;
-    width: 370px;   
+    width: 370px;  
+    margin: 15px;
 }
 
 .prtf-list-item > h3 {
@@ -316,12 +342,14 @@ letter-spacing: 0.06em;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-black)
+    color: var(--main-black);
+    margin: 20px 24px 4px;
 }
 
 .prtf-list-item > p {
     font-size: 16px;
     line-height: 1.87;
+    padding: 0 24px 20px;
 
     color: var(--main-grey);
 

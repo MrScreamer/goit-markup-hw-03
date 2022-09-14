@@ -19,22 +19,22 @@
     <title>Портфоліо</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <nav class="nav">
         <a href="./index.html" class="logo-blue logo"
           >Web<span class="logo-black logo">Studio</span></a
         >
         <ul class="nav-list">
-          <li><a href="./index.html" class="nav-list-link">Студія</a></li>
           <li>
-            <a href="./portfolio.html" class="nav-list-link selected"
-              >Портфоліо</a
-            >
+            <a href="./index.html" class="nav-list-link selected">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav-list-link">Портфоліо</a>
           </li>
           <li><a href="/" class="nav-list-link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contact-list">
+      <ul class="contact-list d-flex">
         <li class="contact-list-item">
           <a href="mailto:info@devstudio.com" class="header-contacts"
             >info@devstudio.com</a
@@ -47,34 +47,35 @@
         </li>
       </ul>
     </header>
-    <main>
-      <nav class="portfolio-menu">
-        <ul class="prtf-menu-list">
+    <main class="line section">
+      <nav class="portfolio-menu container d-flex">
+        <ul class="prtf-menu-list d-flex">
           <li class="prtf-menu-list-item">
-            <button type="button">Усі</button>
+            <button type="button" class="prtf-padding-button">Усі</button>
           </li>
           <li class="prtf-menu-list-item">
-            <button type="button">Веб-сайти</button>
+            <button type="button" class="prtf-padding-button">Веб-сайти</button>
           </li>
           <li class="prtf-menu-list-item">
-            <button type="button">Додатки</button>
+            <button type="button" class="prtf-padding-button">Додатки</button>
           </li>
           <li class="prtf-menu-list-item">
-            <button type="button">Дизайн</button>
+            <button type="button" class="prtf-padding-button">Дизайн</button>
           </li>
           <li class="prtf-menu-list-item">
-            <button type="button">Маркетинг</button>
+            <button type="button" class="prtf-padding-button">Маркетинг</button>
           </li>
         </ul>
       </nav>
-      <section class="portfolio-items">
-        <h2></h2>
-        <ul class="prtf-item-list">
+      <section class="portfolio-items container">
+        <h2 hidden></h2>
+        <ul class="prtf-item-list d-flex">
           <li class="prtf-list-item">
             <img
               src="./images/portfolio1.jpg"
               alt="Технокряк Веб-сайт"
-              width="100%"
+              width="370"
+              height="294"
             />
             <h3>Технокряк</h3>
             <p>Веб-сайт</p>
@@ -150,25 +151,29 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <a href="/index.html" class="logo-blue logo"
-        >Web<span class="logo-white logo">Studio</span></a
-      >
-      <address>
-        <ul class="footer-list">
-          <li class="footer-list-item">
-            <a href="" class="color-white">м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="footer-list-item">
-            <a href="mailto:info@devstudio.com" class="color-grey"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="footer-list-item">
-            <a href="tel:+380961111111" class="color-grey">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer class="footer-bg">
+      <div class="container d-flex footer">
+        <a href="/index.html" class="logo-blue logo footer-logo"
+          >Web<span class="logo-white logo">Studio</span></a
+        >
+        <address>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="" class="color-white">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="mailto:info@devstudio.com" class="color-grey"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="tel:+380961111111" class="color-grey"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
