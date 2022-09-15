@@ -38,12 +38,6 @@
 
 /* Header */
 
-.header {
-    display: flex; 
-    /* justify-content: space-between; */
-
-}
-
 .nav {
     display: flex;
 }
@@ -54,6 +48,10 @@
     font-size: 26px;    
     line-height: 1.19;
     letter-spacing: inherit;
+
+}
+
+.logo-header {
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -345,16 +343,16 @@ letter-spacing: 0.06em;
 border: 1px solid #EEEEEE;
 }
 
-.prtf-list-item > h3 {
+.prtf-item-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-black);
-    margin: 20px 24px 4px;
+    padding: 20px 24px 4px;
 }
 
-.prtf-list-item > p {
+.prtf-item-text {
     font-size: 16px;
     line-height: 1.87;
     padding: 0 24px 20px;
